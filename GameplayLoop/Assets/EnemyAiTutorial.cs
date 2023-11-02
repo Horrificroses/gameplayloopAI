@@ -82,7 +82,6 @@ public class EnemyAiTutorial : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            Debug.Log("Attacking player!"); // Add this line to check if the method is being called
             ///Attack code here
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
